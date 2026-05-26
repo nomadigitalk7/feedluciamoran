@@ -7,7 +7,7 @@
 <meta name="description" content="Mockup de feed Instagram y guía de edición para Lucía Morán Fotografía de casamientos.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&family=Space+Grotesk:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -433,29 +433,47 @@ body {
 .bio-line.gold { color: var(--gold); font-size: 13px; font-family: 'Jost', sans-serif; font-weight: 300; }
 
 /* FOOTER */
-.footer {
-  background: var(--dark);
-  padding: 40px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer-brand {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-style: italic;
-  color: var(--gold);
-}
-.footer-credit {
-  font-size: 11px;
-  color: #555;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-}
+/* ── TOPBAR BRANDING ── */
+.noma-topbar{border-bottom:1px solid #2A2A2A;padding:14px 40px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:rgba(10,10,10,0.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);z-index:200}
+.noma-topbar-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.noma-topbar-wordmark{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:#fff}
+.noma-topbar-wordmark span{color:#A855F7}
+.noma-topbar-right{display:flex;align-items:center;gap:20px}
+.noma-topbar-badge{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#555555;background:#111111;border:1px solid #2A2A2A;padding:4px 10px;border-radius:6px}
+.noma-topbar-date{font-family:'DM Mono',monospace;font-size:11px;color:#555555}
+
+/* ── FOOTER BRANDING ── */
+.footer{background:#0A0A0A;border-top:1px solid #2A2A2A;padding:32px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+.footer-brand{display:flex;align-items:center;gap:12px}
+.footer-wordmark{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px;color:#ffffff}
+.footer-wordmark span{color:#A855F7}
+.footer-tagline{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#555555}
+.footer-note{font-family:'DM Mono',monospace;font-size:10px;color:#555555}
 
 </style>
 </head>
 <body>
+
+<!-- TOPBAR -->
+<div class="noma-topbar">
+  <a href="#" class="noma-topbar-logo">
+    <svg width="28" height="28" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="10,10 70,10 90,90 10,90" fill="none" stroke="#2A2A2A" stroke-width="1.5" stroke-linejoin="round"/>
+      <line x1="10" y1="10" x2="10" y2="90" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="10" y1="10" x2="90" y2="90" stroke="#A855F7" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="50" y1="50" x2="70" y2="10" stroke="#A855F7" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="10" cy="10" r="5.5" fill="#A855F7"/>
+      <circle cx="50" cy="50" r="4" fill="#A855F7"/>
+      <circle cx="70" cy="10" r="4" fill="#C084FC"/>
+      <circle cx="90" cy="90" r="5.5" fill="#A855F7"/>
+    </svg>
+    <div class="noma-topbar-wordmark">NOMA<span>DIGITALK</span></div>
+  </a>
+  <div class="noma-topbar-right">
+    <span class="noma-topbar-badge">Contenido · Crecimiento</span>
+    <span class="noma-topbar-date">mayo 2026 · Lucía Morán Fotografía</span>
+  </div>
+</div>
 
 <div class="feed-section">
   <div class="label">Mockup Feed Instagram — Lucía Morán Fotografía</div>
@@ -972,8 +990,23 @@ body {
 
 <!-- FOOTER -->
 <div class="footer">
-  <div class="footer-brand">Lucía Morán Fotografía</div>
-  <div class="footer-credit">Desarrollado por Nomadigitalk · Marketing & Growth Studio</div>
+  <div class="footer-brand">
+    <svg width="22" height="22" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="10,10 70,10 90,90 10,90" fill="none" stroke="#2A2A2A" stroke-width="1.5" stroke-linejoin="round"/>
+      <line x1="10" y1="10" x2="10" y2="90" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="10" y1="10" x2="90" y2="90" stroke="#A855F7" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="50" y1="50" x2="70" y2="10" stroke="#A855F7" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="10" cy="10" r="5.5" fill="#A855F7"/>
+      <circle cx="50" cy="50" r="4" fill="#A855F7"/>
+      <circle cx="70" cy="10" r="4" fill="#C084FC"/>
+      <circle cx="90" cy="90" r="5.5" fill="#A855F7"/>
+    </svg>
+    <div>
+      <div class="footer-wordmark">NOMA<span>DIGITALK</span></div>
+      <div class="footer-tagline">Growth &amp; Automation Studio</div>
+    </div>
+  </div>
+  <div class="footer-note">Contenido · Crecimiento · Lucía Morán Fotografía · mayo 2026</div>
 </div>
 
 </body>
